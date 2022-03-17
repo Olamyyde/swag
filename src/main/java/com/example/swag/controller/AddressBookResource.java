@@ -17,7 +17,7 @@ public class AddressBookResource {
         return contacts.get(id);
     }
 
-    @GetMapping("")
+    @GetMapping("/")
     public List<Contact> getAllContacts(){
         return new ArrayList<>(contacts.values());
     }
